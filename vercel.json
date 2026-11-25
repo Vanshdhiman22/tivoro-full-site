@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build:frontend",
+  "outputDirectory": "frontend",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/home",
+      "destination": "/index"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/contact",
+      "destination": "https://tivoro-studio-preview.mossy-petal-9415.chatgpt.site/contact",
+      "permanent": false
+    },
+    {
+      "source": "/inbox",
+      "destination": "https://tivoro-studio-preview.mossy-petal-9415.chatgpt.site/inbox",
+      "permanent": false
+    }
+  ]
+}
